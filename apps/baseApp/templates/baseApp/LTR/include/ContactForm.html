@@ -1,0 +1,29 @@
+<!-- ##### Not used For loop to customiz each field seperatly. ##### -->
+{% load i18n %}
+
+<!-- START CONTACT WRAP -->
+<form id="contactform" method="POST"> {% csrf_token %}
+    <!-- One Second (1/2) Column -->
+    <div class="column one-second">
+        {{form.name}}
+        {{form.name.errors}}
+    </div>
+    <!-- One Second (1/2) Column -->
+    <div class="column one-second">
+        {{form.client_email}}
+        {{form.client_email.errors}}
+    </div>
+    <div class="column one">
+        {{form.subject}}
+        {{form.subject.errors}}
+    </div>
+    <div class="column one">
+        {{form.message}}
+        {{form.message.errors}}
+    </div>
+    <div class="column one">
+        {{form.captcha}}
+        {{form.captcha.errors}}
+        <button type="submit" class="pt-button pt-button--theme pt-button--lg" style="margin-top:10px;width:100%;">{% trans "Send Message" %}</button>
+    </div>
+</form><!-- END CONTACT WRAP -->
