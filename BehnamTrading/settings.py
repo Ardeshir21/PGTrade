@@ -46,9 +46,9 @@ DEBUG = bool(secrets_dict['DEBUG'])
 
 ALLOWED_HOSTS = ['localhost',
                  '127.0.0.1',
-                 # '178.128.226.80',
-                 # 'www.saeedehdesigns.com',
-                 # 'saeedehdesigns.com',
+                 '161.35.102.245',
+                 'www.pgtrade.com.tr',
+                 'pgtrade.com.tr',
 ]
 
 
